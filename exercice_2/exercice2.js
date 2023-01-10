@@ -20,3 +20,24 @@ let elemByInSide1 = form.elements.fname
 let elemByInSide2 = form.elements.lname
 
 console.log(elemByInSide1,elemByInSide2);
+
+/*
+Lorsque l'utilisateur soumet le formulaire (c'est-à-dire submitécouteur d'événement)
+utiliser event.preventDefault(), pourquoi ?
+obtenir les valeurs des balises d'entrée,
+assurez-vous qu'ils ne sont pas vides,
+créer une livaleur par entrée,
+puis ajoutez-les à un <ul class="usersAnswer"></ul>, sous le form.
+*/
+
+let elemForm = document.querySelector("form")
+let button = document.querySelector("sumit")
+
+button.addEventListener("click", sendGo)
+// sendlastName.addEventListener("click",sendGo2)
+
+function sendGo(e){
+let first = document.querySelector(["name=fname"])
+let last = document.querySelector(["name=lname"])
+    console.log(button);
+}
